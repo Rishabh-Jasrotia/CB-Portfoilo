@@ -313,6 +313,7 @@ body::-webkit-scrollbar-thumb
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    transition: all 350ms linear;
 }
 .box-sec
 {
@@ -361,16 +362,16 @@ body::-webkit-scrollbar-thumb
 }
 #box-ux
 {
-    left: 70%;
+    left: 75%;
 }
 #box-ui
 {
-    left: 65%;
+    left: 69%;
     top: 600px;
 }
 #box-tech
 {
-    left: 38%;
+    left: 35%;
     top: 400px;
 }
 .service-exp
@@ -414,4 +415,45 @@ body::-webkit-scrollbar-thumb
 .exp-txt:nth-of-type(2n)
 {
     color: #c58403;
+}
+.anim-1
+{
+    transform: translateX(-80px);
+    transition: all 200ms linear;
+}
+.anim-2
+{
+    transform: translateX(80px);
+    transition: all 200ms linear;
+}
+
+/*---------------------------------------------------------- Companies Section --------------------------------------------------------*/
+#brands
+{
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    width: 100vw;
+    height: -moz-calc(100vh - (70px));
+    height: -webkit-calc(100vh - (70px));
+    height: calc(100vh - (70px));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#brand-sec
+{
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    height: 350px;
+    margin-left: 50px;
+}
+#brand-sec .contact-btn
+{
+    width: 160px;
+    height: 40px;
+    font-size: 18px;
 }
