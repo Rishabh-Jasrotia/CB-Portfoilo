@@ -617,3 +617,72 @@ body::-webkit-scrollbar-thumb
     -moz-box-shadow: 3px -3px 4px -1px rgb(6 191 151);
     box-shadow: 3px -3px 4px -1px rgb(6 191 151);
 }
+
+/*---------------------------------------------------------- Work-Ex Section --------------------------------------------------------*/
+#work-ex
+{
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    width: 100vw;
+    height: -moz-calc(100vh - (70px));
+    height: -webkit-calc(100vh - (70px));
+    height: calc(100vh - (70px));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#work-ex>h2
+{
+    font-size: 48px;
+}
+#work-ex>h2 span
+{
+    color: #c58403;
+}
+#work-sec
+{
+    margin-top: 30px;
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    border: 3px solid #737373;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+#work-img
+{
+    width: 110px;
+    height: 110px;
+}
+#work-img img
+{
+    bottom:-18px;
+    left: -7px;
+    transform: scale(1.1);
+}
+#work-sec p
+{
+    font-size: 25px;
+}
+#work-sec p:nth-of-type(2n)
+{
+    color: #c58403;
+}
+.w-button
+{
+    cursor: pointer;
+    background-color: white;
+    width: 110px;
+    height: 40px;
+    border-radius: 30px;
+    color: black;
+    border:none;
+    font-family: inherit;
+    font-size: 20px;
+}
