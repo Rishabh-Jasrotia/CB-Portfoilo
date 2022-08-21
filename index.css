@@ -686,3 +686,123 @@ body::-webkit-scrollbar-thumb
     font-family: inherit;
     font-size: 20px;
 }
+
+/*---------------------------------------------------------- Contact Section --------------------------------------------------------*/
+#contact
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 100vw;
+    height: -moz-calc(100vh - (70px));
+    height: -webkit-calc(100vh - (70px));
+    height: calc(100vh - (70px));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box
+{
+    /* height: 500px; */
+    width: calc(100vw - (100px));
+    display: flex;
+    flex-direction: row;
+}
+.contact-sec
+{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+#c-form
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 20px;
+    align-items: center;
+    padding: 10px;
+}
+#c-form input
+{
+    border: 3px solid #ff9400;
+    width: 100%;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: Black;
+    font-size: inherit;
+}
+#c-form textarea
+{
+    border: 3px solid #ff9400;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: Black;
+    font-size: inherit;
+    height: 130px;
+}
+#c-form .contact-btn
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 45px;
+}
+#curved
+{
+    position: relative;
+    background-color: #ffcc00;
+    width: 100%;
+    height: 170px;
+}
+#curved-vec
+{
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 170px;
+    border: solid 0px white;
+    background-color: black;
+    border-color: transparent transparent transparent transparent;
+    border-radius: 0% 100% 63% 37% / 77% 0% 100% 23% ;
+}
+
+/*-------------------------------------------------------------- Footer ------------------------------------------------------------*/
+footer
+{
+    font-family: 'League Spartan', sans-serif;
+    width: 100vw;
+    height: 300px;
+    background-color: #ffcc00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+footer>p
+{
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+}
+#footer-icon
+{
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 70px;
+}
