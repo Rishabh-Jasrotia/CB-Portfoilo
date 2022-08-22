@@ -25,3 +25,25 @@ window.addEventListener('scroll',e =>{
         }
     });
 });
+var navopen=false
+document.getElementById("hamburger").addEventListener('click', ele => {
+    if(!navopen)
+    {
+        document.getElementById("nav-overlay").classList.add("nav-anim");
+        document.querySelector("body").style.overflowY="hidden";
+        navopen=true;
+    }
+    else
+    {
+        document.getElementById("nav-overlay").classList.remove("nav-anim");
+        document.querySelector("body").style.overflowY="visible";
+        navopen=false;
+    }
+});
+document.querySelectorAll("#nav-overlay a").forEach(ele => {
+    ele.addEventListener('click',e => {
+        document.getElementById("nav-overlay").classList.remove("nav-anim");
+        document.querySelector("body").style.overflowY="visible";
+        navopen=false;
+    });
+});

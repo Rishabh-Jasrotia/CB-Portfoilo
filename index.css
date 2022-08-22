@@ -46,6 +46,14 @@ body::-webkit-scrollbar-thumb
   'GRAD' 0,
   'opsz' 48
 }
+#hamburger
+{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
 
 /*--------------------------------------------------------------- Navbar -------------------------------------------------------------*/
 #nav-bar
@@ -166,6 +174,37 @@ body::-webkit-scrollbar-thumb
     height: 40px;
 }
 
+#hamburger
+{
+    display: none;
+}
+
+#nav-overlay
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - (65px));
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    right: -100%;
+    transition: transform 500ms ease-in;
+}
+#nav-overlay .nav-sec
+{
+    flex-direction: column;
+    height: 400px;
+}
+.nav-anim
+{
+    transform: translateX(-101%);
+}
+
 /*------------------------------------------------------------ Landing Page ----------------------------------------------------------*/
 #landing
 {
@@ -242,7 +281,7 @@ body::-webkit-scrollbar-thumb
     font-size: 3.5rem;
 }
 
-.landing-img
+.landing-img 
 {
     width: 500px;
     height: 500px;
@@ -805,4 +844,283 @@ footer>p
     align-items: center;
     justify-content: space-around;
     font-size: 70px;
+}
+
+/*-------------------------------------------------------------- Responsive Queries ------------------------------------------------------------*/
+
+@media only screen  and (max-width:1190px)
+{
+    /*--------------------------------------------------------------- Navbar -------------------------------------------------------------*/
+    #nav-links>div
+    {
+        width: 80%;
+    }
+
+    /*------------------------------------------------------------ Landing Page ----------------------------------------------------------*/
+    .landing-img
+    {
+        width: 400px;
+        height: 400px;
+    }
+
+    /*---------------------------------------------------------- Services Section -------------------------------------------------------- */
+    .anim-1
+    {
+        transform: translateX(-50px);
+        transition: all 200ms linear;
+    }
+    .anim-2
+    {
+        transform: translateX(50px);
+        transition: all 200ms linear;
+    }
+
+    /*---------------------------------------------------------- Companies Section --------------------------------------------------------*/
+    #main-c
+    {
+        width: 315px;
+        height: 315px;
+    }
+    .brand-circle-small
+    {
+        height: 84px;
+        width: 84px;
+        font-size: 3rem;
+    }
+    .brand-circle-small:nth-child(1)
+    {
+        left: 110.5px;
+        top: -47px;
+    }
+    .brand-circle-small:nth-child(2)
+    {
+        right:-47px;
+        top: 110.5px;
+    }
+    .brand-circle-small:nth-child(3)
+    {
+        left: 110.5px;
+        bottom: -47px;
+    }
+    .brand-circle-small:nth-child(4)
+    {
+        left:-47px;
+        top: 110.5px;
+    }
+    .brand-circle-small:nth-child(5)
+    {
+        left: 110.5px;
+        top: 110.5px;
+    }
+    .brand-circle-mid
+    {
+        height: 210px;
+        width: 210px;
+    }
+    .brand-circle-mid:nth-child(6)
+    {
+        right: -45px;
+        top: -20px;
+    }
+    .brand-circle-mid:nth-child(7)
+    {
+        bottom: -20px;
+        right: -45px;   
+    }
+    
+    /*---------------------------------------------------------- Portfolio Section --------------------------------------------------------*/
+    .p-cards
+    {
+        height: 300px;
+        width: 200px;
+    }
+    .p-cards p
+    {
+        font-size: 14px;
+        font-weight: 300;
+        width: 180px;
+    }
+    .p-button
+    {
+        width: 120px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:980px)
+{
+    /*--------------------------------------------------------------- Navbar -------------------------------------------------------------*/
+    #nav-links
+    {
+        width: 70%;
+        font-size: 16px;
+    }
+    #nav-name
+    {
+        width: 250px;
+    }
+    #nav-name h2
+    {
+        font-size: 20px;
+    }
+    
+    /*------------------------------------------------------------ Landing Page ----------------------------------------------------------*/
+    .landing-head
+    {
+        font-size: 3rem;
+    }
+    .landing-desc
+    {
+        font-size: 16px;
+    }
+
+    /*---------------------------------------------------------- Services Section -------------------------------------------------------- */
+    #brand-sec
+    {
+        width: 400px;
+        margin: 0px;
+    }
+    .services-box
+    {
+        width: 230px;
+        height: 400px;
+    }
+    .box-sec
+    {
+        height: 335px;
+    }
+    #box-ux
+    {
+        left: 70%;
+    }
+    #box-ui
+    {
+        left: 66%;
+        top: 600px;
+    }
+    #box-tech
+    {
+        left: 30%;
+        top: 400px;
+    }
+    .anim-1
+    {
+        transform: translateX(-30px);
+        transition: all 200ms linear;
+    }
+    .anim-2
+    {
+        transform: translateX(30px);
+        transition: all 200ms linear;
+    }
+
+    /*---------------------------------------------------------- Portfolio Section --------------------------------------------------------*/
+    #portfolio
+    {
+        height:fit-content;
+    }
+    #portfolio>p
+    {
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #portfolio-sec
+    {
+        height: max-content;
+        flex-wrap: wrap;
+    }
+    .p-cards
+    {
+        height: 300px;
+        width: 300px;
+        margin: 5px;
+    }
+    .p-cards:hover
+    {
+        transform: translateY(0px);
+    }
+    .p-cards p
+    {
+        width:220px;
+    }
+
+    #work-ex>h2
+    {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    /*---------------------------------------------------------- Contact Section --------------------------------------------------------*/
+    #c-form
+    {
+        width: 340px;
+        font-size: 18px;
+    }
+    #c-form input
+    {
+        height: 30px;
+    }
+    #c-form textarea
+    {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:880px)
+{
+    .landing-img
+    {
+        width: 350px;
+        height: 350px;
+    }
+    #brands
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #brand-box
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: fit-content;
+    }
+    #brand-sec
+    {
+        width: 500px;
+        margin: 0px;
+    }
+}
+@media only screen and (max-width:760px)
+{
+    /*--------------------------------------------------------------- Navbar -------------------------------------------------------------*/
+    #hamburger
+    {
+        display: block;
+    }
+    #nav-links>.nav-sec
+    {
+        display: none;
+    }
+    #nav-links
+    {
+        width: 20%;
+        font-size: 18px;
+    }
+
+    /*------------------------------------------------------------ Landing Page ----------------------------------------------------------*/
+
+    /*---------------------------------------------------------- Services Section -------------------------------------------------------- */
+
+    /*---------------------------------------------------------- Companies Section --------------------------------------------------------*/
+
+    /*---------------------------------------------------------- Portfolio Section --------------------------------------------------------*/
+
+    /*---------------------------------------------------------- Contact Section --------------------------------------------------------*/
+
 }
