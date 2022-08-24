@@ -1114,13 +1114,237 @@ footer>p
     }
 
     /*------------------------------------------------------------ Landing Page ----------------------------------------------------------*/
+    .ser-cont
+    {
+        height: calc(100% + (100px));
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #ser-text
+    {
+        margin: 0px;
+        width: 450px;
+    }
+    .services-box
+    {
+        position: initial;
+        width: 270px;
+        height: 410px;
+        margin: 10px 0px 10px 0px;
+    }
+    .box-sec
+    {
+        height: 350px;
+    }
+    #filler
+    {
+        display: none;
+    }
 
     /*---------------------------------------------------------- Services Section -------------------------------------------------------- */
 
     /*---------------------------------------------------------- Companies Section --------------------------------------------------------*/
+    #brand-sec
+    {
+        width: 450px;
+    }
 
     /*---------------------------------------------------------- Portfolio Section --------------------------------------------------------*/
 
     /*---------------------------------------------------------- Contact Section --------------------------------------------------------*/
+    #contact
+    {
+        height: fit-content;
+    }
+    .contact-sec
+    {
+        align-items: center;
+    }
+    #contact-box
+    {
+        width: 90%;
+        flex-direction: column;
+    }
 
+    /*---------------------------------------------------------- Work-Ex Section --------------------------------------------------------*/
+    #work-ex>h2
+    {
+        font-size: 35px;
+    }
+    #work-sec
+    {
+        height: 300px;
+        width: 480px;
+    }
+}
+@media only screen and (max-width:570px)
+{
+    /*--------------------------------------------------------------- Navbar -------------------------------------------------------------*/
+    #nav-links
+    {
+        width: 40%;
+        font-size: 18px;
+    }
+    
+    
+    /*------------------------------------------------------------ Landing Page ----------------------------------------------------------*/
+    #landing
+    {
+        margin: 50px 0px 50px 0px;
+        height: fit-content;
+    }
+    #landing>div
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .landing-head
+    {
+        font-size: 3.5rem;
+    }
+    .landing-img
+    {
+        width: 390px;
+        height: 390px;
+        margin: 10px 0 10px 0;
+    }
+    .landing-sec:nth-child(1)
+    {
+        padding-left: 0px;
+        width: 390px;
+    }
+
+    /*---------------------------------------------------------- Services Section -------------------------------------------------------- */
+    #ser-text
+    {
+        width: 390px;
+    }
+    .exp-sec
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*---------------------------------------------------------- Companies Section --------------------------------------------------------*/
+    #brand-sec
+    {
+        width: 390px;
+    }
+
+    /*---------------------------------------------------------- Portfolio Section --------------------------------------------------------*/
+    #portfolio>p
+    {
+        font-size: 40px;
+    }
+
+    /*---------------------------------------------------------- Contact Section --------------------------------------------------------*/
+
+    /*---------------------------------------------------------- Work-Ex Section --------------------------------------------------------*/
+    #work-sec
+    {
+        height: 350px;
+        width: 390px;
+    }
+}
+@media only screen and (max-width:415px)
+{
+    /*--------------------------------------------------------------- Navbar -------------------------------------------------------------*/
+    
+    /*------------------------------------------------------------ Landing Page ----------------------------------------------------------*/
+    .landing-sec:nth-child(1)
+    {
+        width: 350px;
+    }
+    .landing-head
+    {
+        font-size: 3rem;
+    }
+    .landing-img
+    {
+        width: 350px;
+        height: 350px;
+    }
+    .landing-icons
+    {
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    /*---------------------------------------------------------- Services Section -------------------------------------------------------- */
+    #ser-text
+    {
+        width: 350px;
+    }
+
+    /*---------------------------------------------------------- Companies Section --------------------------------------------------------*/
+    #brand-sec
+    {
+        width: 350px;
+    }
+    #main-c
+    {
+        width: 252px;
+        height: 252px;
+    }
+    .brand-circle-small
+    {
+        height: 67.2px;
+        width: 67.2px;
+        font-size: 2.5rem;
+    }
+    .brand-circle-small:nth-child(1)
+    {
+        left: 87.4px;
+        top: -38.6px;
+    }
+    .brand-circle-small:nth-child(2)
+    {
+        right:-38.6px;
+        top: 87.4px;
+    }
+    .brand-circle-small:nth-child(3)
+    {
+        left: 87.4px;
+        bottom: -38.6px;
+    }
+    .brand-circle-small:nth-child(4)
+    {
+        left:-38.6px;
+        top: 87.4px;
+    }
+    .brand-circle-small:nth-child(5)
+    {
+        left: 87.4px;
+        top: 87.4px;
+    }
+    .brand-circle-mid
+    {
+        height: 168px;
+        width: 168px;
+    }
+    .brand-circle-mid:nth-child(6)
+    {
+        right: -35px;
+        top: -10px;
+    }
+    .brand-circle-mid:nth-child(7)
+    {
+        bottom: -10px;
+        right: -35px;
+    }
+
+    /*---------------------------------------------------------- Portfolio Section --------------------------------------------------------*/
+    .exp-sec
+    {
+        width: 100px;
+    }
+    /*---------------------------------------------------------- Contact Section --------------------------------------------------------*/
+
+    /*---------------------------------------------------------- Work-Ex Section --------------------------------------------------------*/
+    #work-sec
+    {
+        width: 350px;
+    }
 }

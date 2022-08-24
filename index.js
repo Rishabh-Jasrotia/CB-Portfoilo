@@ -8,8 +8,9 @@ function isInViewport(element)
 }
 var boxes= document.querySelectorAll(".services-box");
 window.addEventListener('scroll',e =>{
+    var w=window.outerWidth;
     boxes.forEach(ele => {
-        if(isInViewport(ele))
+        if(isInViewport(ele) && w>760)
         {
             if(ele.id==="box-tech")
                 ele.classList.add("anim-2");
